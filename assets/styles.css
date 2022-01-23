@@ -1,4 +1,7 @@
-body { font-family: sans-serif; }
+body {
+  background-color: floralwhite;
+  font-family: sans-serif;
+}
 
 img {
   max-width: 100%;
