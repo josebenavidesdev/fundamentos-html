@@ -30,7 +30,7 @@
   </style>
 </head>
 <body>
-  <h2>Temario del curso</h2>
+  <h2 id="inicio">Temario del curso</h2>
   <ul>
     <li><a href="#etiquetas-formateo">Etiquetas de formateo</a></li>
     <li><a href="#etiquetas-semanticas-estructurales">Etiquetas semánticas estructurales</a></li>
@@ -46,6 +46,7 @@
     <li><a href="#scripts">Scripts en HTML</a></li>
     <li><a href="#elementos-interactivos">Elementos interactivos</a></li>
     <li><a href="#audio-video">Audio y Video</a></li>
+    <li><a href="#iframes">Iframes</a></li>
   </ul>
   <hr>
   <!-- Titulares para secciones del documento -->
@@ -90,7 +91,7 @@
   <p>
     <code>Este texto está en formato de código</code>
   </p>
-  <a href="index.html">☝️</a>
+  <a href="index.html#inicio">☝️</a>
 
   <hr>
   <h2 id="etiquetas-semanticas-estructurales">Etiquetas semánticas estructurales</h2>
@@ -103,7 +104,7 @@
   <aside>aside: Representa un contenido complementario o secundario</aside>
   <section>section: Representa una seccion de contenido generico</section>
   <address>address: Representa una información de contacto</address>
-  <a href="index.html">☝️</a>
+  <a href="index.html#inicio">☝️</a>
 
   <hr>
   <h2 id="etiquetas-linea-bloque">Etiquetas de linea y de bloque</h2>
@@ -111,21 +112,21 @@
   <p>Una etiqueta de bloque es aquella que genera saltos de linea con sus etiquetas hermanas, ocupa el 100% del ancho disponible</p>
   <span>La etiqueta en linea por excenlencia es <strong>span</strong></span>
   <p><span style="background-color: lightgreen">Una etiqueta de linea solo ocupa el espacio necesario que tiene su contenido</span> <span>Soy otro span</span></p>
-  <a href="index.html">☝️</a>
+  <a href="index.html#inicio">☝️</a>
 
   <hr>
   <h2 id="imagenes">Imagenes</h2>
   <img src="img/puesta-sol.jpg" alt="Puesta del sol">
   <img src="img/this-is-fine.gif" alt="Meme del perro this is fine">
   <img src="img/kEnAi.svg" alt="Kenai">
-  <a href="index.html">☝️</a>
+  <a href="index.html#inicio">☝️</a>
 
   <hr>
   <h2 id="svg">SVG</h2>
   <img src="img/bextlan-logos.svg" alt="Bextlan lugar de... bits, vectores y pixeles">
   <img src="img/fox-svgrepo-com.svg" alt="Fox in SVG">
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H5C4.44772 17 4 16.5523 4 16V8C4 7.44772 4.44772 7 5 7ZM2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM10 9L14 12L10 15V9Z" fill="currentColor" /></svg>
-  <a href="index.html">☝️</a>
+  <a href="index.html#inicio">☝️</a>
 
   <hr>
   <h2 id="figuras">Figuras</h2>
@@ -134,7 +135,7 @@
     <img src="img/periodic-table-of-html-elements.png" alt="Tabla de los elementos HTML">
     <figcaption>Tabla de los elementos HTML</figcaption><!-- el figcaption es opcional -->
   </figure>
-  <a href="index.html">☝️</a>
+  <a href="index.html#inicio">☝️</a>
 
   <hr>
   <h2 id="listas-ordenadas">Listas Ordenadas</h2>
@@ -181,7 +182,7 @@
     <li>Otoño</li>
     <li>Invierno</li>
   </ol>
-  <a href="index.html">☝️</a>
+  <a href="index.html#inicio">☝️</a>
 
   <hr>
   <h2 id="listas-desordenadas">Listas Desordenadas</h2>
@@ -201,7 +202,7 @@
     <li>Estudiar CSS</li>
     <li>Estudiar Javascript</li>
   </ul>
-  <a href="index.html">☝️</a>
+  <a href="index.html#inicio">☝️</a>
 
   <hr>
   <h2 id="listas-definicion">Listas de Definicion</h2>
@@ -213,7 +214,7 @@
     <dt>Javascript</dt>
     <dd>Es el lenguaje de la web</dd>
   </dl>
-  <a href="index.html">☝️</a>
+  <a href="index.html#inicio">☝️</a>
 
   <hr>
   <h2 id="tablas">Tablas</h2>
@@ -288,7 +289,7 @@
       </tr>
     </tfoot>
   </table>
-  <a href="index.html">☝️</a>
+  <a href="index.html#inicio">☝️</a>
 
   <hr>
   <h2 id="enlaces">Enlaces</h2>
@@ -308,7 +309,7 @@
   <a href="https://youtube.com/jonmircha" target="_blank" rel="nofollow noopener noreferrer">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H5C4.44772 17 4 16.5523 4 16V8C4 7.44772 4.44772 7 5 7ZM2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM10 9L14 12L10 15V9Z" fill="currentColor" /></svg>
   </a>
-  <a href="index.html">☝️</a>
+  <a href="index.html#inicio">☝️</a>
 
   <hr>
   <h2 id="elementos-interactivos">Elementos interactivos</h2>
@@ -342,18 +343,30 @@
       <img src="img/puesta-sol.jpg" alt="Puesta de sol">
     </article>
   </details>
-  <a href="index.html">☝️</a>
+  <a href="index.html#inicio">☝️</a>
 
   <hr>
   <h2 id="audio-video">Audio y Video</h2>
   <!-- preload ayuda a cargar el video asi el usuario no le haya dado play -->
   <audio src="media/Feels-PatrickPatrikios.mp3" controls preload></audio>
   <video src="media/kenai.mp4" controls preload poster="img/puesta-sol.jpg"></video>
-  <a href="index.html">☝️</a>
+  <a href="index.html#inicio">☝️</a>
+
+  <hr>
+  <h2 id="iframes">Iframes</h2><!-- elemento de linea -->
+  <iframe src="acerca.html" frameborder="1"></iframe>
+  <br><br>
+  <iframe src="https://jonmircha.com" frameborder="1"></iframe>
+  <br><br>
+  <iframe src="media/emmet-cheat-sheet.pdf" frameborder="1"></iframe>
+  <br><br>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.7163775106583!2d-77.03804348518729!3d-12.063025091456494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3126d574246724aa!2sParque%20de%20la%20Exposici%C3%B3n!5e0!3m2!1ses-419!2spe!4v1643494126625!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <br><br>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/F55LNTW3GE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   <hr>
   <h2 id="scripts">Scripts en HTML</h2>
-  <a href="index.html">☝️</a>
+  <a href="index.html#inicio">☝️</a>
   <script type="text/javascript">
     console.log("Hola estamos aprendiendo HTML");
   </script>
