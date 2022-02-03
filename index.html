@@ -393,6 +393,25 @@
     <option value="js">Javascript</option>
   </select>
 
+  <h3>Atributos de inputs y formularios</h3>
+  <input type="text" value="jose" readonly disabled><br><br>
+  <input type="text" placeholder="Escribe tu nombre"><br><br>
+
+  <!-- https://jonmircha.com/?usuario=jose&password=123 -->
+  <!-- el metodo GET(envia los valores por medio de la URL) es el valor por defecto -->
+  <!-- el metodo POST(envia mediante las cabezeras del documento) de forma oculta -->
+  <!-- si no se declara el atributo action el formulario se autoprocesa -->
+  <!-- ^[A-Za-z]$ solo permite letras mayusculas o minusculas -->
+  <form action="https://jonmircha.com/" method="GET" autocomplete="off">
+    <label for="usuario">Usuario: </label>
+    <input type="text" name="usuario" id="usuario" pattern="^[A-Za-z]+$" title="El campo solo acepta letras" autocomplete="on" required><br><br>
+
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password" required><br><br>
+
+    <input type="submit"><br><br>
+    <input type="reset"><br><br>
+  </form>
   <a href="index.html#inicio">☝️</a>
 
   <hr>

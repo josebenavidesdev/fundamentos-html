@@ -14,3 +14,8 @@ iframe {
   width: 80%;
   height: 400px;
 }
+
+form {
+  background-color: rgba(255, 160, 122, 0.5);
+  padding: 1rem;
+}
