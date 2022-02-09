@@ -412,8 +412,54 @@
     <input type="submit"><br><br>
     <input type="reset"><br><br>
   </form>
-  <a href="index.html#inicio">☝️</a>
 
+  <!-- /index.html?idioma=es -->
+  <!-- /index.html?idioma=es&lenguaje=ruby -->
+  <!-- /index.html?idioma=es&lenguaje=python&intereses=deportes&intereses=finanzas -->
+  <!-- si los radios y checkboxs no tienen un valor en value se envia el valor de "on" -->
+  <h3>Selects, Radios y Checkbox</h3>
+  <form>
+    <p>Elige tu idioma:</p>
+    <select name="idioma" required>
+      <option value="">Elige una opcion</option>
+      <option value="es" selected>Español</option>
+      <option value="en">Inglés</option>
+      <option value="fr">Francés</option>
+    </select>
+
+    <p>Elige tu lenguaje de programación favorito:</p>
+    <!-- solo necesitamos required en uno de los radios para que sea obligatorio -->
+    <input type="radio" name="lenguaje" id="radio-js" value="js" required>
+    <label for="radio-js">Javascript</label>
+
+    <input type="radio" name="lenguaje" id="radio-py" value="python" checked>
+    <label for="radio-py">Python</label>
+
+    <input type="radio" name="lenguaje" id="radio-rb" value="ruby">
+    <label for="radio-rb">Ruby</label>
+
+    <p>Elige tus intereses:</p>
+    <!-- los checkbox pueden admitir multiples checked -->
+    <label>
+      <input type="checkbox" name="intereses" value="deportes">Deportes
+    </label>
+    <label>
+      <input type="checkbox" name="intereses" value="finanzas" checked>Finanzas
+    </label>
+    <label>
+      <input type="checkbox" name="intereses" value="salud" checked>Salud
+    </label>
+    <label>
+      <input type="checkbox" name="intereses" required>Obligatorio
+    </label>
+
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Restablecer"><!-- regresa los valores por defecto -->
+    </p>
+  </form>
+
+  <a href="index.html#inicio">☝️</a>
   <hr>
   <h2 id="scripts">Scripts en HTML</h2>
   <a href="index.html#inicio">☝️</a>
