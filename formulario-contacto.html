@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto</title>
+  <style type="text/css">
+    body {
+      background-color: floralwhite;
+    }
+
+    form > * {
+      display: block;
+      margin: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Enviar Email</h1>
+
+  <form action="https://formsubmit.co/josebenavides.dev@gmail.com" method="POST">
+    <input
+      type="text"
+      name="nombre"
+      placeholder="Escribe tu nombre"
+      pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+      title="Solo acepta letras y espacios en blanco"
+      required>
+
+    <input
+      type="email"
+      name="correo"
+      placeholder="Escribe tu correo"
+      pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+      title="Formato de correo invalido"
+      required>
+
+    <textarea name="comentarios" cols="30" rows="10" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
+<!-- servor . formulario-contacto.html 3000 -->
